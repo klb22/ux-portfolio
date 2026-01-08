@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navBar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.name {
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: .8rem 1rem;
+    color: #333;
+}
+
+.link {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    float: right;
+    transition: color .3s ease-out;
+}
+
+.link:hover {
+    transition: color .25s ease-out;
+    color: white;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 23rem;
+}
+
+#nameInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 2.5rem;
+}
+
+#welcomeImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 5em;
+}
+
+figcaption {
+    position: absolute;
+    border-radius: 2em;
+    padding: 1em;
+    font-size: 3em;
+    z-index: 2;
+    top: 0;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+#welcomeImg img {
+    display: block;
+    position: relative;
+    width: 50%; /* Image will be 50% of the container's width */
+    height: auto; /* Keeps the aspect ratio */
+    z-index: 1;
+}
