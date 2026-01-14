@@ -3,6 +3,7 @@ body {
     background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .navBar {
@@ -11,81 +12,232 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 0 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: flex-end; /* Align items to right */
+    align-items: center;
 }
 
 .name {
     text-decoration: none;
-    display: block;
-    float: left;
-    padding: .8rem 1rem;
+    padding: 1rem;
     color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: auto; /* Pushes everything else to right */
+    transition: all 0.3s ease;
+}
+
+.name:hover {
+    color: rgba(107, 107, 255, 0.8);
+    transform: translateY(-2px);
 }
 
 .link {
-    display: block;
     color: #333;
     text-align: center;
-    padding: .8rem 1rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
-    float: right;
-    transition: color .3s ease-out;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .link:hover {
-    transition: color .25s ease-out;
-    color: white;
+    color: rgba(107, 107, 255, 0.8);
 }
 
-#welcome-section {
+/* Welcome Section */
+#welcomeSection {
+    padding-top: 80px;
+    text-align: center;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 23rem;
+    justify-content: center;
 }
 
 #nameInfo {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 2.5rem;
-}
-
-#welcomeImg {
-    display: flex;
     justify-content: center;
-    align-content: center;
-    position: relative;
-    padding: 5em;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-figcaption {
-    position: absolute;
-    border-radius: 2em;
-    padding: 1em;
-    font-size: 3em;
+/* Greeting text above image */
+#greetingText {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    position: relative;
     z-index: 2;
-    top: 0;
+    animation: fadeInDown 1s ease;
 }
 
-span {
-    display: block;
-    text-align: center;
-}
-
-#welcomeImg img {
-    display: block;
+/* Image container for parallax */
+#parallaxContainer {
+    width: 350px;
+    height: 350px;
+    margin: 2rem auto;
     position: relative;
-    width: 50%; /* Image will be 50% of the container's width */
-    height: auto; /* Keeps the aspect ratio */
-    z-index: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-.homework {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 2.5rem;
+#profileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.1s ease-out;
+    will-change: transform; /* Optimize for animation */
+}
+
+#profileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This crops and fits the image */
+    object-position: center center; /* Center the image */
+    display: block; /* Important for img elements */
+    transition: transform 0.3s ease;
+}
+
+#info {
+    max-width: 600px;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1.5rem;
+    color: #333;
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navBar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    
+    .name {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        order: -1;
+    }
+    
+    .link {
+        padding: 0.8rem 1rem;
+    }
+    
+    #greeting-text {
+        font-size: 2.5rem;
+    }
+    
+    #parallax-container {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+.projectsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.projectsContainer h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.projectCard {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projectLink {
+    display: inline-block;
+    background-color: rgba(107, 107, 255, 0.8);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.projectLink:hover {
+    background-color: rgba(107, 107, 255, 1);
+}
+
+/* HCI 472 Page Specific Styles */
+
+#hci472Section {
+    padding-top: 80px; /* Space for fixed navbar */
+    min-height: 100vh;
+}
+
+.pageContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page title container - Centered left */
+.pageTitleContainer {
+    margin-bottom: 3rem;
+    padding-left: 2rem; /* Creates left-center alignment */
+}
+
+.pageSubtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0;
 }
