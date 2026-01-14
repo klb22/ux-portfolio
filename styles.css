@@ -81,3 +81,8 @@ span {
     height: auto; /* Keeps the aspect ratio */
     z-index: 1;
 }
+
+.homework {
+    display: flex;
+    justify-content: center;
+}
