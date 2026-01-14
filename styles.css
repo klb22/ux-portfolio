@@ -85,4 +85,7 @@ span {
 .homework {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 2.5rem;
 }
