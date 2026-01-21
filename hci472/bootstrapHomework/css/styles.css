@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html body {
+    background-color: #739CBF;
+}
+
+.bg-body-tertiary {
+    background-color: #274F73 !important;
+}
+
+.navbar-brand{
+    color: #FAF9F6 !important;
+}
+
+.navbar-toggler {
+    filter: invert(100%);
+}
+
+.nav-link {
+    color: #FAF9F6 !important;
+}
+
+.nav-link:hover {
+    color: #BF8AA7 !important;
+}
+
+.active {
+    color: #BF8AA7 !important;
+}
+
+.footer-kb {
+    text-align: center;
+    color: #212529;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.4;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+}
+
+/*Column colors for challenges*/
+.blue-col {
+    background-color: blue;
+    color: FAF9F6;
+}
+
+.pink-col {
+    background-color: pink;
+    color: FAF9F6;
+}
+
+.orange-col {
+    background-color: orange;
+    color: FAF9F6;
+}
+
+/*Button colors for cards*/
+.btn-primary {
+    background-color: #537345;
+    border-color: #537345;
+}
+
+.btn-primary:hover {
+    background-color: #A45B80;
+    border-color: #A45B80;
+}
+
+/*Carousel styling*/
+.carousel-padding {
+    padding-left: 125px;
+    padding-right: 125px;
+    color: #212529;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:  #A45B80;
+}

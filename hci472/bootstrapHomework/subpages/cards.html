@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kendall Bootstrap Homework - Cards</title>
+    <!--CSS Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../css/styles.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Kendall</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cards.html">Cards</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="carousel.html">Carousel</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Grid Challenges
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../gridChallenges/challenge1.html">Grid Challenge 1</a></li>
+            <li><a class="dropdown-item" href="../gridChallenges/challenge2.html">Grid Challenge 2</a></li>
+            <li><a class="dropdown-item" href="../gridChallenges/challenge3.html">Gride Challenge 3</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div class="container-lg">
+    <div class="row pt-3">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Pretium tellus leo eu.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+            Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+            In id cursus mi pretium tellus duis convallis. 
+            Tempus leo eu aenean sed diam urna tempor. 
+            Pulvinar vivamus fringilla lacus nec metus bibendum egestas. 
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+            Ut hendrerit semper vel class aptent taciti sociosqu. 
+            Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+    </div>
+    <div class="col-1"></div>
+    </div> <!--close row 1-->
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 py-2">
+            <div class="card h-100">
+                <img src="../images/Placeholder1.jpg" class="card-img-top" alt="Étretat: The Beach and the Falaise d’Amont Date: 1885 Artist: Claude Monet French, 1840-1926">
+                <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <div class="card-divider border-top border-2 pb-5">
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2" data-bs-toggle="modal" data-bs-target="#movie1">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Modal -->
+    <div class="modal fade" id="movie1" tabindex="-1" aria-labelledby="movie1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="movie1ModalLabel">Beach Sunset</h1>
+                </div>
+                    <div class="modal-body text-center">
+                        <video controls width="320" height="240" autoplay loop>
+                            <source src="../images/Video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--close modal-->
+                </div> <!--close card-->
+        </div> <!--close card col-->
+        <div class="col-lg-4 col-sm-12 py-2">
+            <div class="card h-100">
+            <img src="../images/Placeholder2.jpg" class="card-img-top" alt="Gardener's House at Antibes Date: 1888 Artist: Claude Monet French, 1840–1926">
+                <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text">Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                    <div class="card-divider border-top border-2 pb-5">
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2" data-bs-toggle="modal" data-bs-target="#movie2">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Modal -->
+    <div class="modal fade" id="movie2" tabindex="-1" aria-labelledby="movie2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="movie2ModalLabel">Waves on the Beach</h1>
+                </div>
+                    <div class="modal-body text-center">
+                        <video controls width="320" height="240" autoplay loop>
+                            <source src="../images/Video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--close modal-->
+            </div>
+        </div> <!--close card col-->
+        <div class="col-lg-4 col-sm-12 py-2">
+            <div class="card h-100">
+            <img src="../images/Placeholder3.jpg" class="card-img-top" alt="Cliff Walk at Pourville Date: 1882 Artist: Claude Monet French, 1840-1926">
+                <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text">Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
+                    <div class="card-divider border-top border-2 pb-5">
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2" data-bs-toggle="modal" data-bs-target="#movie3">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- Modal -->
+    <div class="modal fade" id="movie3" tabindex="-1" aria-labelledby="movie3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="movie3ModalLabel">Sunset Beach 2</h1>
+                </div>
+                    <div class="modal-body text-center">
+                        <video controls width="320" height="240" autoplay loop>
+                            <source src="../images/Video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--close modal-->
+            </div>
+        </div> <!--close card col-->
+    </div> <!--close card row-->
+</div> <!--close container-lg-->
+
+<footer class="footer-kb my-3 mx-3 border-top border-2">
+    <p>Kendall Burns | 2026</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

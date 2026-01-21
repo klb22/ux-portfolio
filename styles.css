@@ -220,25 +220,45 @@ body {
 
 /* HCI 472 Page Specific Styles */
 
-#hci472-section {
-    padding-top: 80px; /* Space for fixed navbar */
-    min-height: 100vh;
-}
-
-.page-content {
+.page-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Page title container - Centered left */
-.page-title-container {
+.page-container h1 {
+    text-align: center;
     margin-bottom: 3rem;
-    padding-left: 2rem; /* Creates left-center alignment */
+    font-size: 2.5rem;
+    color: #333;
 }
 
-.page-subtitle {
-    font-size: 1.2rem;
-    color: black;
-    margin-top: 0;
+.page-card {
+    background-color: #698C64;
+    border-radius: 10px;
+    padding: 2rem;
+    width: fit-content;
+    margin-bottom: 2rem;
+    border: 1px solid #537345;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-link {
+    display: inline-block;
+    background-color: #698C64;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #BF8AA7;
 }
