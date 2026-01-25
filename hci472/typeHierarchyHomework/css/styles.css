@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.bodoni-moda {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lemon-regular {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html body {
+    background-color: #FFE6CC;
+}
+
+.bg-body-tertiary {
+    background-color: #F59AA9 !important;
+}
+
+.navbar-brand{
+    color: #FAF9F6 !important;
+}
+
+.navbar-toggler {
+    filter: invert(100%);
+}
+
+.nav-link {
+    color: #FAF9F6 !important;
+}
+
+.nav-link:hover {
+    color: #5A3B3C !important;
+}
+
+.container-lg {
+    color: #5A3B3C;
+}
+
+.active {
+    color: #5A3B3C !important;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.footer-kb {
+    position: bottom;
+    border-top: 2px solid #5A3B3C;
+    text-align: center;
+    color: #5A3B3C;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: #F59AA9;
+    color: #5A3B3C;
+}
+
+a:hover {
+    text-decoration-style: wavy;
+}
+
+em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+a, i, em, b {
+    font-family: inherit;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*bodoni sizes*/
+.major-third h1 {
+    font-size: 3.815rem;
+    font-weight: 700;
+}
+
+.major-third h2 {
+    font-size: 3.052rem;
+    font-weight: 700;
+}
+
+.major-third h3 {
+    font-size: 2.441rem;
+    font-weight: 700;
+}
+
+.major-third h4 {
+    font-size: 1.953rem;
+    font-weight: 400;
+}
+
+/*josefin sizes*/
+.major-second h1{
+    font-size: 2.027rem;
+    font-weight: 700;
+}
+.major-second h2 {
+    font-size: 1.802rem;
+    font-weight: 700;
+}
+
+.major-second h3 {
+    font-size: 1.602rem;
+    font-weight: 700;
+}
+
+.major-second h4 {
+    font-size: 1.424rem;
+    font-weight: 400;
+}
+
+/*lemon sizes*/
+.minor-second h1{
+    font-size: 1.476rem;
+    font-weight: 700;
+}
+.minor-second h2 {
+    font-size: 1.383rem;
+    font-weight: 700;
+}
+
+.minor-second h3 {
+    font-size: 1.296rem;
+    font-weight: 700;
+}
+
+.minor-second h4 {
+    font-size: 1.215rem;
+    font-weight: 400;
+}

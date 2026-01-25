@@ -41,6 +41,7 @@ html body {
 }
 
 .footer-kb {
+    border-top: 2px solid #5A3B3C;
     text-align: center;
     color: #212529;
 }
