@@ -66,13 +66,7 @@ html body {
     color: #5A3B3C !important;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 .footer-kb {
-    position: bottom;
     border-top: 2px solid #5A3B3C;
     text-align: center;
     color: #5A3B3C;
