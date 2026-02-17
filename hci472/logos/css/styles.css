@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html body {
+    background-color: #FFE6CC;
+    font-family: josefin-sans;
+    color: #5A3B3C;
+}
+
+.bg-body-tertiary {
+    background-color: #F59AA9 !important;
+}
+
+.container-lg {
+    color: #5A3B3C;
+}
+
+a{
+    color: #5A3B3C !important;
+}
+
+.footer-kb {
+    border-top: 2px solid #5A3B3C;
+    text-align: center;
+    color: #5A3B3C;
+}
+
+/*Carousel styling*/
+.carousel-padding {
+    padding-left: 125px;
+    padding-right: 125px;
+    color: #212529;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #A45B80;
+}
