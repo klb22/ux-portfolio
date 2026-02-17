@@ -21,8 +21,8 @@ html body {
     color: #5A3B3C;
 }
 
-a{
-    color: #5A3B3C !important;
+.card{
+    border: 2px solid #F59AA9;
 }
 
 .footer-kb {
