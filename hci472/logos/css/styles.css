@@ -8,27 +8,28 @@
 }
 
 html body {
-    background-color: #FFE6CC;
+    background-color: #f5f5f5;
     font-family: josefin-sans;
-    color: #5A3B3C;
+    color: #121212;
 }
 
 .bg-body-tertiary {
-    background-color: #F59AA9 !important;
+    background: #F7B5E0;
+    background: linear-gradient(90deg, rgba(247, 181, 224, 1) 0%, rgba(245, 245, 245, 1) 100%) !important;
 }
 
 .container-lg {
-    color: #5A3B3C;
+    color: #121212;
 }
 
 .card{
-    border: 2px solid #F59AA9;
+    border: 2px solid #121212;
 }
 
 .footer-kb {
-    border-top: 2px solid #5A3B3C;
+    border-top: 2px solid #121212;
     text-align: center;
-    color: #5A3B3C;
+    color: #121212;
     margin: 2rem;
 }
 
@@ -36,10 +37,5 @@ html body {
 .carousel-padding {
     padding-left: 125px;
     padding-right: 125px;
-    color: #212529;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #A45B80;
+    color: #121212;
 }
