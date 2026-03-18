@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Kendall Burns: Mini-Design System: Type</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon-2.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/sidebars.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-success border-bottom-0  sticky-top">
+        <!-- Navbar toggle button (hamburger icon) -->
+       
+            
+            <button class="navbar-toggler d-block d-md-none navbar-hieght"
+                type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sidebar"
+                aria-controls="sidebar">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+        
+    </nav>
+
+    </nav>
+<!-- This topbar toggle to the off canvas -->
+    <div class="offcanvas offcanvas-start bg-success d-md-block" 
+        tabindex="-1" id="sidebar"
+        aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+        <div class="logo-container">
+          <a href="../index.html"
+            class="d-flex align-items-center justify-content-center pb-3 mb-3 link-dark text-decoration-none">
+            <img src="../../images/color-logo-2.png" alt="Logo" class="nav-logo">
+          </a>
+        </div>
+            <button type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body ">
+            <ul class="nav flex-column">
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-1">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../index.html" class="link-dark d-inline-flex text-decoration-none rounded">
+                        <div class = "offCanvas-home"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                          </svg>
+                          Home</div>
+
+                      </a></li>
+                      </ul>
+                  </li>
+                    <li class="mb-1">
+                      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                      data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                      Foundations
+                      </button>
+                      <div class="collapse show" id="foundations-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded "><span class = "activeLink rounded">Typography</span></a></li>
+                          <li><a href="color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                          <li><a href="logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                         Components
+                        </button>
+                        <div class="collapse" id="components-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../components/component1.html" class="link-dark d-inline-flex text-decoration-none rounded">Navbar</a></li>
+                            <li><a href="../components/component2.html" class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+                            <li><a href="../components/component3.html" class="link-dark d-inline-flex text-decoration-none rounded">Card</a></li>
+                     
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                        data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                          Page Patterns
+                        </button>
+                        <div class="collapse" id="patterns-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../patterns/page1.html" class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                            <li><a href="../patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+<!-- This is the sidebar menu -->
+    <div class="container-fluid ">
+        <div class="row">
+            <nav id="sidebarMenu"
+                class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+                <div class="position-sticky bg-success vh-100">
+                    <div class="pt-3">
+                      <div class="logo-container text-center pb-3 mb-3 border-bottom custom-border-color">
+                        <a href="../index.html" class="d-block link-dark text-decoration-none w-100">
+                          <img src="../../images/color-logo-2.png" alt="Logo" class="nav-logo d-block mx-auto">
+                        </a>
+                      </div>
+                        <ul class="nav flex-column">
+                            <ul class="list-unstyled ps-0">
+                              
+                                <li class="mb-1">
+                                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                  data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                                  Foundations
+                                  </button>
+                                  <div class="collapse show" id="foundations-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                      <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"><span class = "activeLink rounded">Typography</span></a></li>
+                                      <li><a href="color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                                      <li><a href="logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                    data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                                     Components
+                                    </button>
+                                    <div class="collapse" id="components-collapse">
+                                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="../components/component1.html" class="link-dark d-inline-flex text-decoration-none rounded">Navbar</a></li>
+                                        <li><a href="../components/component2.html" class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+                                        <li><a href="../components/component3.html" class="link-dark d-inline-flex text-decoration-none rounded">Card</a></li>
+                                 
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="mb-1">
+                                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                    data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                                      Page Patterns
+                                    </button>
+                                    <div class="collapse" id="patterns-collapse">
+                                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="../patterns/page1.html" class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                                        <li><a href="../patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">Case Study</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+                 <!-- Page Content  -->
+                  <div class = "container-fluid overflow-auto">
+                      <div class = "row p-5">
+                      <div class="container-lg outfit major-second">
+                        <div class="row pt-3 text-center">
+                          <div class="col-lg-12 col-md-12">
+                            <h1>Outfit & Figtree</h1>
+                            <p class="figtree">
+                              <b>Scale:</b> 1.125 - Major Second<br>
+                              <b>Base Size:</b> 16px mobile, 18px tablet and desktop<br>
+                            </p>
+                          </div>
+                      
+                        </div> <!--close row 7-->
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <h1>Heading 1</h1>
+                            <p class="figtree">
+                              Marshmallows cookie dough chocolate syrup cookies and cream chocolate chips french vanilla peanut butter mint.
+                              Almonds brownie bits rainbow sprinkles marshmallows, whipped cream gummy worms dark chocolate vanilla cherry
+                              french vanilla chocolate chip cookie dough peanuts mint chocolate chip.
+                              Peanut butter kitkat chocolate sprinkles oreos salted caramel syrup, chocolate chips cake batter rainbow
+                              sprinkles neopolitan bananas pistachio caramel syrup vanilla.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <h1 class="invisible">heading</h1>
+                              <p class="figtree">
+                                font-family: 'Outfit', sans-serif;<br>
+                                font-size: 32.44px/2.027rem;<br>
+                                font-weight: 800;<br>
+                                font-style: Bold;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 1-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <h2>Heading 2</h2>
+                            <p class="figtree">
+                              French vanilla rocky road cookie dough cookies and cream whipped cream cake batter mint chocolate chip
+                              strawberry mint chocolate chip cherry coffee whipped cream.
+                              Chocolate syrup whipped cream blueberries, m&m's rocky road salted caramel syrup chocolate chip cake batter
+                              rainbow sprinkles.
+                              Vanilla mint gummy worms hot fudge salted caramel syrup chocolate chip french vanilla.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <h2 class="invisible">heading</h2>
+                              <p class="figtree">
+                                font-family: 'Outfit', sans-serif;<br>
+                                font-size: 28.83px/1.802rem;<br>
+                                font-weight: 700;<br>
+                                font-style: normal;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 2-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <h3>Heading 3</h3>
+                            <p class="figtree">
+                              Chocolate chips chocolate chip cookie dough peanuts rocky road salted caramel syrup chocolate.
+                              Cookies and cream marshmallows blueberries whipped cream.
+                              Peanut butter cups peanut butter cups strawberry, brownie bits bananas m&m's pistachio whipped cream
+                              Marshmallows mint chocolate chip almonds strawberry peanuts.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <h3 class="invisible">heading</h3>
+                              <p class="figtree">
+                                font-family: 'Outfit', sans-serif;<br>
+                                font-size: 25.63px/1.602rem;<br>
+                                font-weight: 700;<br>
+                                font-style: normal;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 3-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <h4>Heading 4</h4>
+                            <p class="figtree">
+                              Rainbow sprinkles m&m's chocolate chips, strawberry salted caramel syrup dark chocolate rainbow sprinkles salted
+                              caramel syrup chocolate sprinkles french vanilla chocolate chip cookie dough.
+                              Peanut butter kitkat chocolate chip brownie bits oreos vanilla coffee kitkat blueberries chocolate chip peanut
+                              butter vanilla mint chocolate chip.
+                              Rainbow sprinkles rocky road almonds neopolitan, blueberries chocolate chocolate chocolate sprinkles hot fudge.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <h4 class="invisible">heading</h4>
+                              <p class="figtree">
+                                font-family: 'Outfit', sans-serif;<br>
+                                font-size: 22.78px/1.424rem;<br>
+                                font-weight: 400;<br>
+                                font-style: normal;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 4-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <p class="figtree">Body Content</p>
+                            <p class="figtree">
+                              Peanut butter blueberries whipped cream chocolate chips peanut butter french vanilla almonds caramel syrup.
+                              Chocolate chip gummy worms peanut butter cherry chocolate chip cookie dough strawberries coffee chocolate chip
+                              neopolitan coffee french vanilla peanut butter cups cookies and cream cherry cherry.
+                              Marshmallows strawberry chocolate chip salted caramel syrup strawberry chocolate.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <p class="invisible">heading</p>
+                              <p class="figtree">
+                                font-family: 'Figtree', sans-serif;<br>
+                                font-size: 16px/1rem;<br>
+                                font-weight: 400;<br>
+                                font-style: normal;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 5-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <em>Emphasized Text</em>
+                            <p class="figtree">
+                              Hot fudge strawberry strawberries chocolate syrup almonds caramel syrup chocolate.
+                              <em>Mint chocolate chip peanut butter cups caramel syrup Hot fudge cookies and cream chocolate sprinkles.</em>
+                              M&m's chocolate chip chocolate chips strawberry.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <p class="invisible">heading</p>
+                              <p class="figtree">
+                                font-family: 'Figtree', sans-serif;<br>
+                                font-size: 16px/1rem;<br>
+                                font-style: normal;<br>
+                                font-weight: 700;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 6-->
+                      
+                        <div class="row pt-3">
+                          <div class="col-lg-6 col-md-12">
+                            <a href="#">Link Text</a>
+                            <p class="figtree">
+                              Chocolate french vanilla bananas neopolitan dark chocolate.
+                              Cookies and cream rocky road cookie dough mint chocolate chip mint chocolate chip gummy worms coffee peanuts
+                              dark chocolate brownie bits hot fudge chocolate chip cookie dough french vanilla almonds.
+                              <a href="#">Chocolate sprinkles</a> cherry pistachio brownie bits kitkat chocolate sprinkles chocolate chips
+                              chocolate chip.
+                            </p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                            <div class="text-start spec-block">
+                              <p class="invisible">heading</p>
+                              <p class="figtree">
+                                font-family: 'Figtree', sans-serif;<br>
+                                font-size: 16px/1rem;<br>
+                                font-weight: 400;<br>
+                                font-style: normal;<br>
+                                text-decoration: underline;<br>
+                                text-decoration-thickness: 0.1rem;<br>
+                                text-decoration-color: #274F73;<br>
+                                color: #274F73;<br>
+                                <b>Hover:</b><br>
+                                text-decoration-style: wavy;
+                              </p>
+                            </div>
+                          </div>
+                        </div> <!--close row 7-->
+                      
+                      </div> <!--close container-lg-->
+                  </div>
+                      </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </script>
+</body>
+
+</html>

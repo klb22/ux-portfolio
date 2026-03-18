@@ -1,0 +1,312 @@
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-width: 500px;
+  background-color: #ffffff;
+  font-family: 'Figtree', sans-serif;
+}
+/* 
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+      display: none;
+  }
+    .custom-card {
+      /* Forces the card to be taller on larger screens */
+      min-height: 500px;
+    }
+}
+
+/* Typefaces */
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.figtree{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.major-second h1 {
+  font-size: 2.027rem;
+  font-weight: 800;
+}
+
+.major-second h2 {
+  font-size: 1.802rem;
+  font-weight: 700;
+}
+
+.major-second h3 {
+  font-size: 1.602rem;
+  font-weight: 700;
+}
+
+.major-second h4 {
+  font-size: 1.424rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: #274F73;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-decoration-color: #274F73;
+  color: #274F73;
+}
+
+a:hover {
+  text-decoration-style: wavy;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+a,
+i,
+em,
+b {
+  font-family: inherit;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Navbar Specifics */
+.custom-navbar .nav-link {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.kb-footer p {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.custom-navbar .nav-link.active {
+  color: #274F73;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 5px;
+}
+
+.custom-card {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.custom-tag {
+  border: 2px solid #274F73;
+  border-radius: 20px;
+  padding: 4px 8px;
+  color: black;
+}
+.offcanvas, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-width: 250px;
+  
+}
+
+/* This is your side bar and top bar color - customize */
+.bg-success{
+  --bs-bg-opacity: 1;
+  background-color: #f7b5e0 !important;
+ 
+}
+
+/* This is your side bar right and left margin color - customize */
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #ffffff !important; 
+ 
+}
+
+.offCanvas-home {
+  font-size: 18px;
+
+
+}
+.navbar-light{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+/* change the hieght of the navbar icon if you want */
+.navbar-hieght{
+  height: 60px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+.logo-container {
+  align-items: center;
+  margin: 1rem 0 0 1rem;
+}
+.nav-logo {
+  width: 75%;
+  height: auto;
+}
+
+.custom-border-color {
+  border-color: #000000 !important;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: #000000;
+  background-color: transparent;
+}
+
+/* this is the background color for the main areas in the sidebar- customize */
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: #000000;
+   background-color: #FFFFFF; 
+}
+
+/* this is the background color for the sub areas in the sidebar- customize */
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:active {
+   background-color: #FFFFFF; 
+}
+
+.activeLink{
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: #000000;
+  background-color: #FFFFFF; 
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: #000000;
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+.code-background{
+  background-color: rgba(213, 213, 213, 0.363);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 1px 1px 1px;
+
+}
+
+.page-link{
+  color: grey;
+}
+
+.pagination {
+  --bs-pagination-hover-color: #222;
+  --bs-pagination-hover-bg: #d2f4ea;;
+  --bs-pagination-active-color: #222;
+  --bs-pagination-active-bg: #d2f4ea;
+  --bs-pagination-active-border-color: #222;
+
+}
+
